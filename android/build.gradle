@@ -30,10 +30,7 @@ if (isNewArchitectureEnabled()) {
 }
 
 android {
-    def agpVersion = com.android.Version.ANDROID_GRADLE_PLUGIN_VERSION
-    if (agpVersion.tokenize('.')[0].toInteger() >= 7) {
-        namespace = "com.BV.LinearGradient"
-    }
+    namespace = "com.rnlineargradient"
     compileSdkVersion safeExtGet('compileSdkVersion', 31).toInteger()
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 21)
